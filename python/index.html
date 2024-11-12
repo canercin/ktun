@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caner Çin 211213052</title>
+</head>
+<body>
+    <h1>İsim: Caner Çin</h1>
+    <h2>Öğrenci Numarası: 211213052</h2>
+    <div style="text-align: center;">
+        <img src="{{ url_for('plot') }}" alt="Plot" id="plot-img">
+        <br><br>
+        <button onclick="refreshPlot()">Yeni Noktalar Oluştur</button>
+    </div>
+    <script>
+        function refreshPlot() {
+            document.getElementById('plot-img').src = "{{ url_for('plot') }}?t=" + new Date().getTime();
+        }
+    </script>
+</body>
+</html>

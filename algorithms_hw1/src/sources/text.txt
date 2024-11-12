@@ -1,0 +1,7 @@
+Antalya/07->Mersin/33
+Konya/42->Antalya/07->İstanbul/34
+İstanbul/34->Konya/42->Kayseri/38->Ordu/52
+Ordu/52->İstanbul/34
+Kayseri/38->Adıyaman/02
+Adıyaman/02->İstanbul/34->Kayseri/38
+Mersin/33->İstanbul/34
